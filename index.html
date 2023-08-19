@@ -19,13 +19,15 @@
                 <a href="/" title="Eco Lodge" class="flex-none">
                     <img src="/images/logo.jpg" class="w-52" alt="Eco Lodge" />
                 </a>
-                <nav class="flex-grow">
-                    <ul class="flex ">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                    </ul>
-                </nav>
+                <div class="flex-grow">
+                    <nav class="flex items-center ml-20">
+                        <ul class="flex space-x-10">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="flex-none">
                     <a href="/book-now.html">
                         Book Now
@@ -36,12 +38,34 @@
 
         <main class="container mx-auto bg-gray-300">
 
+
+            <section>
+                <div class="flex">
+                    <div class="h-52 w-52 bg-red-400 hidden sm:block">
+                        640px
+                    </div>
+                    <div class="h-52 w-52 bg-green-400 hidden md:block">
+                        768px
+                    </div>
+                    <div class="h-52 w-52 bg-yellow-400 hidden lg:block">
+                        1024px
+                    </div>
+                    <div class="h-52 w-52 bg-blue-400 hidden xl:block">
+                        1280px
+                    </div>                    
+                </div>
+                <div class="w-full bg-black h-52 sm:bg-red-400 md:bg-green-400 lg:bg-yellow-400 xl:bg-blue-400">
+                    Color Change
+                </div>
+            </section>
+
+
+
             <section class="text-center py-10">
                 <h2 class="mb-2">HOTELS IN SRI LANKA</h2>
                 <h1 class="text-4xl mb-6">JETWING HOTELS</h1>
                 <div class="w-2/3 mx-auto space-y-4 h-24 overflow-hidden relative"
-                x-bind:class="{ 'h-24' : !show, 'h-auto' : show }"
-                x-data="{ show : false }">
+                    x-bind:class="{ 'h-24' : !show, 'h-auto' : show }" x-data="{ show : false }">
                     <p>
                         Revel in our histories. Chase our mysteries. Discover extraordinary places. Unwind in our
                         spaces. At
@@ -83,13 +107,12 @@
                     </p>
 
                     <div class="w-full bg-black text-white h-10 absolute bottom-0 items-center justify-center flex cursor-pointer hover:bg-gray-500"
-                    x-on:click="show = !show">
+                        x-on:click="show = !show">
                         <span x-show="!show">Read More</span>
                         <span x-show="show">Read Less</span>
                     </div>
                 </div>
             </section>
-
 
             <section class="flex justify-between">
                 <div class="p-10">
@@ -102,7 +125,6 @@
                     <img src="/images/logo.jpg" alt="Eco Lodge" class="w-full" />
                 </div>
             </section>
-
 
         </main>
 

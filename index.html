@@ -14,15 +14,13 @@
     <div id="app" x-data="{
         version : '1.0.0', 
     }">
-        <header class="container mx-auto">
+        <header class="container mx-auto pt-4 px-4">
             <div class="flex">
                 <a href="/" title="Eco Lodge" class="flex-none">
-                    <img src="/images/logo.jpg" 
-                    class="w-52"
-                    alt="Eco Lodge" />
+                    <img src="/images/logo.jpg" class="w-52" alt="Eco Lodge" />
                 </a>
                 <nav class="flex-grow">
-                    <ul>
+                    <ul class="flex ">
                         <li><a href="/">Home</a></li>
                         <li><a href="/about">About Us</a></li>
                         <li><a href="/contact">Contact Us</a></li>
@@ -33,11 +31,79 @@
                         Book Now
                     </a>
                 </div>
-            </div>        
+            </div>
         </header>
 
         <main class="container mx-auto bg-gray-300">
-            This is the main content !!!
+
+            <section class="text-center py-10">
+                <h2 class="mb-2">HOTELS IN SRI LANKA</h2>
+                <h1 class="text-4xl mb-6">JETWING HOTELS</h1>
+                <div class="w-2/3 mx-auto space-y-4 h-24 overflow-hidden relative"
+                x-bind:class="{ 'h-24' : !show, 'h-auto' : show }"
+                x-data="{ show : false }">
+                    <p>
+                        Revel in our histories. Chase our mysteries. Discover extraordinary places. Unwind in our
+                        spaces. At
+                        Jetwing Hotels, we promise you are in good hands. With the largest family of hotels and villas
+                        across Sri Lanka, we are delighted to welcome you into our homes found on the mountains to the
+                        coastline, and everywhere else in between.
+                    </p>
+
+                    <p>
+                        Our legendary hospitality is one that we are truly proud of, and will forever remain synonymous
+                        with
+                        our name - wherever you may cross paths with us on your travels far and wide.
+                    </p>
+
+                    <p>Our spaces have also been designed to seamlessly blend the finest of Sri Lankan hospitality with
+                        the
+                        nature of our surroundings, creating atmospheres of undiscovered luxury that you will find hard
+                        to
+                        match. With rooms that draw you into a world of their own, and signature dining experiences that
+                        transport you to a world beyond, your stay with us is a stay to remember. No matter how long you
+                        choose to spend with our family, we will always welcome you with open arms and a tropical
+                        embrace to
+                        make you feel at home.</p>
+
+                    <p>As you explore our island, the smiles of our people will accompany you through the many natural
+                        spectacles and historical wonders on your journey. And although our home may hold fascinating
+                        legacies, it is also an exotic habitat that we carefully preserve for the future. It is one we
+                        share
+                        not only with the world, but also with each other – and this is what binds us together as a
+                        nation
+                        of warmth and compassion.</p>
+
+                    <p>Through uncharted lands or world-famous destinations, our eternal spirit of Sri Lankan
+                        hospitality
+                        is one that is refreshingly contagious, in the best way possible. For it begins and ends with a
+                        simple blessing bestowed upon each and every one of you when you set foot on our land:</p>
+                    <p>
+                        Ayubowan – may you live long!
+                    </p>
+
+                    <div class="w-full bg-black text-white h-10 absolute bottom-0 items-center justify-center flex cursor-pointer hover:bg-gray-500"
+                    x-on:click="show = !show">
+                        <span x-show="!show">Read More</span>
+                        <span x-show="show">Read Less</span>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="flex justify-between">
+                <div class="p-10">
+                    <h2>HOTELS IN SRI LANKA</h2>
+                    <h1 class="text-4xl">JETWING HOTELS</h1>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+                        voluptatum.</p>
+                </div>
+                <div class="p-10">
+                    <img src="/images/logo.jpg" alt="Eco Lodge" class="w-full" />
+                </div>
+            </section>
+
+
         </main>
 
         <footer class="container mx-auto bg-gray-300">

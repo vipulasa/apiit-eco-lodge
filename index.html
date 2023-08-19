@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco Lodge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
+
 <body>
-    <h1>Hello from my personal website</h1>
+    <!-- Primary ROOT element -->
+    <div id="app" x-data="{
+        version : '1.0.0', 
+    }">
+        <header class="container mx-auto">
+            <div class="flex">
+                <a href="/" title="Eco Lodge" class="flex-none">
+                    <img src="/images/logo.jpg" 
+                    class="w-52"
+                    alt="Eco Lodge" />
+                </a>
+                <nav class="flex-grow">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="flex-none">
+                    <a href="/book-now.html">
+                        Book Now
+                    </a>
+                </div>
+            </div>        
+        </header>
+
+        <main class="container mx-auto bg-gray-300">
+            This is the main content !!!
+        </main>
+
+        <footer class="container mx-auto bg-gray-300">
+            This is the footer !!!
+        </footer>
+    </div>
 </body>
+
 </html>

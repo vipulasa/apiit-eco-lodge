@@ -36,12 +36,25 @@
             </div>
         </header>
 
+        <button type="button" x-data="{count : 0}" x-on:click="count = count + 1">
+            <span x-text="count"></span> Count
+        </button>
+
         <main class="container mx-auto bg-gray-300">
-                <h1>Test</h1>
+            <div x-data="{
+                show: false
+            }">
+                <button type="button" x-on:click="show = !show">Show</button>
+                <div x-show="show">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus saepe repudiandae, consequatur,
+                    illo officiis dolor officia maxime reprehenderit ducimus voluptatum commodi tenetur. Labore
+                    doloremque voluptates provident quae beatae quibusdam aspernatur!
+                </div>
+            </div>
         </main>
 
         <footer class="container mx-auto bg-gray-300">
-            This is the footer !!!
+            
         </footer>
     </div>
 </body>

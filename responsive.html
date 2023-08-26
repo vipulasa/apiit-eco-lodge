@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Lodge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+    <!-- Primary ROOT element -->
+    <div id="app" x-data="{
+        version : '1.0.0', 
+    }">
+
+        <main class="container mx-auto bg-gray-300">
+            <section>
+                <div class="flex">
+                    <div class="h-52 w-52 bg-red-400 hidden sm:block">
+                        640px
+                    </div>
+                    <div class="h-52 w-52 bg-green-400 hidden md:block">
+                        768px
+                    </div>
+                    <div class="h-52 w-52 bg-yellow-400 hidden lg:block">
+                        1024px
+                    </div>
+                    <div class="h-52 w-52 bg-blue-400 hidden xl:block">
+                        1280px
+                    </div>                    
+                </div>
+                <div class="w-full bg-black h-52 sm:bg-red-400 md:bg-green-400 lg:bg-yellow-400 xl:bg-blue-400">
+                    Color Change
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
